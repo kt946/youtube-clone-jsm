@@ -30,7 +30,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
           <CheckCircle sx={{ fontSize: 14, color: 'gray', ml: '5px' }} />
         </Typography>
         {channelDetail?.statistics?.subscriberCount && (
-          <Typography>
+          <Typography variant="subtitle2" color="gray">
             {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString('en-US')} Subscribers
           </Typography>
         )}
